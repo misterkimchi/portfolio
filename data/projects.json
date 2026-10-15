@@ -1,0 +1,37 @@
+[
+  {
+    "title": "the food at home",
+    "category": "web",
+    "description": "interactive recipe discovery and pantry-matching application built to reduce food waste by querying available kitchen ingredients against recipe apis.",
+    "technologies": [ "python", "streamlit", "rest apis", "pandas" ],
+    "link": "https://thefoodathome.streamlit.app/"
+  },
+  {
+    "title": "gl dining brand architecture",
+    "category": "web",
+    "description": "multi-concept responsive restaurant portal unifying two distinct physical brands under one umbrella domain without compromising mobile navigation speed.",
+    "technologies": [ "html5", "bootstrap 5", "css3", "javascript" ],
+    "link": ""
+  },
+  {
+    "title": "relational database analytics & procedures",
+    "category": "data",
+    "description": "enterprise database system featuring custom stored procedures, views, user-defined functions, and automated triggers to track operational transaction metrics.",
+    "technologies": [ "microsoft sql server", "t-sql", "relational modeling" ],
+    "link": ""
+  },
+  {
+    "title": "econometric & empirical regression models",
+    "category": "data",
+    "description": "cross-sectional statistical analysis executing multi-variable ordinary least squares regression, residual diagnostic testing, and confidence interval estimation.",
+    "technologies": [ "r", "rstudio", "wooldridge", "ggplot2" ],
+    "link": ""
+  },
+  {
+    "title": "cloud security log analysis pipeline",
+    "category": "programming",
+    "description": "automated security log ingestion scripts designed to filter suspicious network traffic anomalies and map access attempts against compliance frameworks.",
+    "technologies": [ "python", "bash", "google cloud", "siem" ],
+    "link": ""
+  }
+]
