@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+    --bg-color: #161616;
+    --text-main: #d4d4d4;
+    --text-bright: #ffffff;
+    --text-dim: #737373;
+    --border-color: #2b2b2b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+    background-color: var(--bg-color) !important;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-bright);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: var(--text-bright);
+    text-decoration: underline dotted 1px var(--text-dim);
+    text-underline-offset: 4px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+    a:hover {
+        color: #ffffff;
+        text-decoration: underline solid 1px #ffffff;
+    }
+
+.text-muted, .text-secondary {
+    color: var(--text-dim) !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-color) !important;
+    border-bottom: 1px solid var(--border-color);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.navbar-brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-bright) !important;
+    text-decoration: none !important;
+}
+
+.nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-dim) !important;
+    text-decoration: underline dotted 1px transparent;
+    text-underline-offset: 4px;
+    padding: 0.25rem 0.6rem !important;
+}
+
+    .nav-link:hover, .nav-link.active {
+        color: var(--text-bright) !important;
+        text-decoration: underline dotted 1px var(--text-bright);
+    }
+
+.navbar-toggler {
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    padding: 0.25rem 0.5rem;
+}
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Borderless Clean Cards */
+.card, .project-card {
+    background-color: transparent !important;
+    color: var(--text-main);
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-tech {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background-color: transparent;
+    color: var(--text-dim);
+    border: 1px solid var(--border-color);
+    padding: 0.15rem 0.45rem;
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
+    display: inline-block;
+}
+
+.badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    border-radius: 0 !important;
+}
+
+    .badge.bg-secondary {
+        background-color: #242424 !important;
+        color: var(--text-dim);
+        border: 1px solid var(--border-color);
+    }
+
+/* Category Filter Buttons */
+.filter-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    border-radius: 0 !important;
+    border: 1px solid var(--border-color) !important;
+    background-color: transparent !important;
+    color: var(--text-dim) !important;
+    padding: 0.25rem 0.65rem;
+}
+
+    .filter-btn:hover {
+        color: var(--text-bright) !important;
+        border-color: #555555 !important;
+    }
+
+    .filter-btn.active {
+        background-color: #242424 !important;
+        color: var(--text-bright) !important;
+        border-color: #737373 !important;
+    }
+
+/* Search Input */
+.form-control {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    background-color: #121212 !important;
+    color: var(--text-bright) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+}
+
+    .form-control:focus {
+        border-color: #666666 !important;
+        box-shadow: none !important;
+    }
+
+    .form-control::placeholder {
+        color: #4a4a4a !important;
+    }
+
+/* Buttons */
+.btn-primary, .btn-outline-secondary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+    padding: 0.45rem 1rem;
+}
+
+.btn-primary {
+    background-color: #262626 !important;
+    color: var(--text-bright) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+    .btn-primary:hover {
+        background-color: #333333 !important;
+        border-color: #666666 !important;
+    }
+
+.btn-outline-secondary {
+    background-color: transparent !important;
+    color: var(--text-dim) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+    .btn-outline-secondary:hover {
+        color: var(--text-bright) !important;
+        border-color: #666666 !important;
+    }
+
+/* Profile Photo */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    filter: grayscale(100%);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-color) !important;
+    border-top: 1px solid var(--border-color) !important;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+/* Back to Top */
+#backToTopBtn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: none;
+    z-index: 99;
+    background-color: #222222 !important;
+    color: var(--text-dim) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+    #backToTopBtn:hover {
+        color: #ffffff !important;
+        border-color: #666666 !important;
+    }
